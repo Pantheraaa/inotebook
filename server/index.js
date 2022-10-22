@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
     res.send("Welcome to iNotebook");
 })
 
+app.get('/', (req, res) => {
+    res.send("About page");
+})
+
 app.listen(port, (req, res) => {
     connectDB()
     console.log(`App is listening on port ${port}...`);
